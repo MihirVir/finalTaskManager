@@ -1,0 +1,79 @@
+GET http://localhost:8000/user/posts
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg5NDJjNmQyZWE1NmIxZjVhODhkYTgiLCJ1c2VybmFtZSI6Ik5ldyBVc2VyIDEiLCJwYXNzd29yZCI6IiQyYSQxMCRpV041eURRVmVaSkdlRGRlSDEvTFlPcjFac1FiZWRUV29zTk9RRjZ1cGxaNnNKaUxtZDBndSIsIl9fdiI6MCwiaWF0IjoxNjUzMTYyNzgyLCJleHAiOjE2NTMxNjYzODJ9.u_xGq_mHxM0VQeFt6vYM8Q4JUSoZemDv8a_TFR0HZZA
+###
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "username": "New User 1",
+    "password": "1234"
+}
+
+###
+POST http://localhost:8000/user/
+Content-Type: application/json
+
+{
+    "username": "New User 1",
+    "password": "1234"
+}
+
+###
+GET http://localhost:8000/user/all
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg5NDJjNmQyZWE1NmIxZjVhODhkYTgiLCJ1c2VybmFtZSI6Ik5ldyBVc2VyIDEiLCJwYXNzd29yZCI6IiQyYSQxMCRpV041eURRVmVaSkdlRGRlSDEvTFlPcjFac1FiZWRUV29zTk9RRjZ1cGxaNnNKaUxtZDBndSIsIl9fdiI6MCwiaWF0IjoxNjUzMTYyNzgyLCJleHAiOjE2NTMxNjYzODJ9.u_xGq_mHxM0VQeFt6vYM8Q4JUSoZemDv8a_TFR0HZZA
+
+
+###
+GET http://localhost:8000/user/6288a214041c0b57b5b44231
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg5NDJjNmQyZWE1NmIxZjVhODhkYTgiLCJ1c2VybmFtZSI6Ik5ldyBVc2VyIDEiLCJwYXNzd29yZCI6IiQyYSQxMCRpV041eURRVmVaSkdlRGRlSDEvTFlPcjFac1FiZWRUV29zTk9RRjZ1cGxaNnNKaUxtZDBndSIsIl9fdiI6MCwiaWF0IjoxNjUzMTYyNzgyLCJleHAiOjE2NTMxNjYzODJ9.u_xGq_mHxM0VQeFt6vYM8Q4JUSoZemDv8a_TFR0HZZA
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:8000/user/create
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg5NDJjNmQyZWE1NmIxZjVhODhkYTgiLCJ1c2VybmFtZSI6Ik5ldyBVc2VyIDEiLCJwYXNzd29yZCI6IiQyYSQxMCRpV041eURRVmVaSkdlRGRlSDEvTFlPcjFac1FiZWRUV29zTk9RRjZ1cGxaNnNKaUxtZDBndSIsIl9fdiI6MCwiaWF0IjoxNjUzMTYyNzgyLCJleHAiOjE2NTMxNjYzODJ9.u_xGq_mHxM0VQeFt6vYM8Q4JUSoZemDv8a_TFR0HZZA
+
+{
+    "name": "New Task"
+}
+
+
+
+
+
+
+
+###
+PUT http://localhost:8000/user/6288a5e1671a97df6d9f6029
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg5NDJjNmQyZWE1NmIxZjVhODhkYTgiLCJ1c2VybmFtZSI6Ik5ldyBVc2VyIDEiLCJwYXNzd29yZCI6IiQyYSQxMCRpV041eURRVmVaSkdlRGRlSDEvTFlPcjFac1FiZWRUV29zTk9RRjZ1cGxaNnNKaUxtZDBndSIsIl9fdiI6MCwiaWF0IjoxNjUzMTYyNzgyLCJleHAiOjE2NTMxNjYzODJ9.u_xGq_mHxM0VQeFt6vYM8Q4JUSoZemDv8a_TFR0HZZA
+
+{
+    "name": "Second Update New One",
+    "stage": 2
+}
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:8000/api/get
+Content-Type: application/json
+
+{
+    "limit": 2
+}
